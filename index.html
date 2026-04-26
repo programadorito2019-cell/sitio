@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Sitio Web con Google Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .form-iframe {
+      border: none;
+      width: 100%;
+      height: 900px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1rem; }
+      .form-iframe { height: 1200px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contesta nuestro cuestionario</h1>
+    <!-- Reemplaza la URL del src con el enlace de tu Google Form (usar la versión "embedded") -->
+    <iframe class="form-iframe"
+      src="<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3TifC80iaMl9_5we_ZCmXQOKz1pJfpTSU4h2F6ftaFNXp3Q/viewform?embedded=true" width="640" height="2732" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      allowfullscreen>
+      Cargando…
+    </iframe>
+    <p style="text-align:center; color: #999; font-size:14px;">
+      Tus respuestas serán almacenadas de manera segura en una hoja de cálculo de Google Sheets.
+    </p>
+  </div>
+</body>
+</html>
